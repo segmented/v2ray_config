@@ -1,0 +1,62 @@
+{
+  "inbounds": [
+    {
+      "port":443,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+           {
+            "id": "d3b19d64-968a-4858-9794-976322c14504",
+            "level": 1,
+            "alterId": 64
+         }
+        ]
+    },
+    "streamSettings": {
+        "network": "h2",
+        "httpSettings": {
+          "path": "/q"
+        },
+        "security": "tls", 
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/v2ray/v2ray.crt", 
+              "keyFile": "/etc/v2ray/v2ray.key" 
+            }
+          ]
+        }
+    }
+  },
+      {
+      "port": 444, 
+      "protocol": "shadowsocks",
+      "settings": {
+        "method": "chacha20-ietf",
+        "password": "sjdasod892e2sasad@@@!!@#TGF45" 
+      }
+   }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }],
+
+"log": {
+    "loglevel": "warning",
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log"
+  },
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": ["geoip:private"],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
