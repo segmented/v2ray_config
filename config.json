@@ -1,0 +1,62 @@
+{
+  "inbounds": [
+    {
+      "port":443,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+           {
+            "id": "d3b19d64-968a-4858-9794-976322c14504",
+            "level": 1,
+            "alterId": 64
+         }
+        ]
+    },
+    "streamSettings": {
+        "network": "h2",
+        "httpSettings": { //此项是关于 HTTP/2 的设置
+          "path": "/q"
+        },
+        "security": "tls", // security 要设置为 tls 才会启用 TLS
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/v2ray/v2ray.crt", // 证书文件
+              "keyFile": "/etc/v2ray/v2ray.key" // 密钥文件
+            }
+          ]
+        }
+    }
+  },
+      {
+      "port": 444, // SS 协议服务端监听端口
+      "protocol": "shadowsocks",
+      "settings": {
+        "method": "chacha20-ietf", // 加密方式
+        "password": "sjdasod892e2sasad@@@!!@#TGF45" //密码
+      }
+   }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }],
+
+"log": {
+    "loglevel": "warning",
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log"
+  },
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": ["geoip:private"],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
