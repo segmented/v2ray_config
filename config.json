@@ -14,26 +14,26 @@
     },
     "streamSettings": {
         "network": "h2",
-        "httpSettings": { //此项是关于 HTTP/2 的设置
+        "httpSettings": { 
           "path": "/q"
         },
-        "security": "tls", // security 要设置为 tls 才会启用 TLS
+        "security": "tls",
         "tlsSettings": {
           "certificates": [
             {
-              "certificateFile": "/etc/v2ray/v2ray.crt", // 证书文件
-              "keyFile": "/etc/v2ray/v2ray.key" // 密钥文件
+              "certificateFile": "/etc/v2ray/v2ray.crt", 
+              "keyFile": "/etc/v2ray/v2ray.key" 
             }
           ]
         }
     }
   },
       {
-      "port": 444, // SS 协议服务端监听端口
+      "port": 444, 
       "protocol": "shadowsocks",
       "settings": {
-        "method": "chacha20-ietf", // 加密方式
-        "password": "sjdasod892e2sasad@@@!!@#TGF45" //密码
+        "method": "chacha20-ietf", 
+        "password": "sjdasod892e2sasad@@@!!@#TGF45"
       }
    }],
   "outbounds": [{
