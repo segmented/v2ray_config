@@ -49,14 +49,5 @@
     "loglevel": "warning",
     "access": "/usr/local/share/v2ray/access.log",
     "error": "/usr/local/share/v2ray/error.log"
-  },
-  "routing": {
-    "rules": [
-      {
-        "type": "field",
-        "ip": ["geoip:private"],
-        "outboundTag": "blocked"
-      }
-    ]
   }
 }
