@@ -17,8 +17,8 @@ source ~/.bashrc
 systemctl stop firewalld.service
 cd /etc/v2ray
 rm -f config.json
-wget https://raw.githubusercontent.com/u403/v2ray_config/master/config.json
-wget https://raw.githubusercontent.com/u403/v2ray_config/master/v2ray.crt
-wget https://raw.githubusercontent.com/u403/v2ray_config/master/v2ray.key
+wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
+wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.crt
+wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.key
 
 systemctl start v2ray
