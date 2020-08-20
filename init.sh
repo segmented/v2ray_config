@@ -4,7 +4,7 @@
 
 #install v2ray
 
-curl https://install.direct/go.sh | sh
+curl https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh | bash
 source ~/.bashrc
 
 #yum -y install lrzsz socat
