@@ -21,8 +21,8 @@
         "tlsSettings": {
           "certificates": [
             {
-              "certificateFile": "/usr/local/lib/v2ray/v2ray.crt", 
-              "keyFile": "/usr/local/lib/v2ray/v2ray.key" 
+              "certificateFile": "/usr/local/share/v2ray/v2ray.crt", 
+              "keyFile": "/usr/local/share/v2ray/v2ray.key" 
             }
           ]
         }
@@ -47,8 +47,8 @@
 
 "log": {
     "loglevel": "warning",
-    "access": "/usr/local/lib/v2ray/access.log",
-    "error": "/usr/local/lib/v2ray/error.log"
+    "access": "/usr/local/share/v2ray/access.log",
+    "error": "/usr/local/share/v2ray/error.log"
   },
   "routing": {
     "rules": [
