@@ -27,14 +27,7 @@
           ]
         }
     }
-  },
-      {
-      "port": 444, 
-      "protocol": "shadowsocks",
-      "settings": {
-        "method": "chacha20-ietf", 
-        "password": "sjdasod892e2sasad@@@!!@#TGF45"
-      }
+  
    }],
   "outbounds": [{
     "protocol": "freedom",
