@@ -24,4 +24,4 @@ wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.crt
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.key
 
-v2ray run -d
+v2ray run
