@@ -24,4 +24,5 @@ wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.crt
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.key
 
-systemctl start v2ray
+#systemctl start v2ray
+v2ray run
