@@ -18,7 +18,7 @@ source ~/.bashrc
 #~/.acme.sh/acme.sh --installcert -d de.auxssrost.cf --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
 
 systemctl stop firewalld.service
-cd /usr/local/share/v2ray/
+cd /usr/local/etc/v2ray/
 rm -f config.json
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.crt
