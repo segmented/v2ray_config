@@ -4,11 +4,11 @@
 #install v2ray
 
 #curl https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh | sh
-#curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh |  bash
+curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh |  bash
 
 #back to 4.45.0
-wget https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh
-bash  install-release.sh  --version v4.45.0
+#wget https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh
+#bash  install-release.sh  --version v4.45.0
 #curl https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-dat-release.sh | sh
 curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-dat-release.sh | bash
 source ~/.bashrc
@@ -21,17 +21,19 @@ source ~/.bashrc
 #~/.acme.sh/acme.sh --installcert -d de.auxssrost.cf --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
 
 systemctl stop firewalld.service
-cd /usr/local/share/v2ray/
+cd /usr/local/etc/v2ray/
+rm -f config.json
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.crt
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.key
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 
-mkdir /usr/local/etc/v2ray
-cd /usr/local/etc/v2ray
-rm -f config.json
-wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
+#mkdir /usr/local/etc/v2ray
+#cd /usr/local/etc/v2ray
+#rm -f config.json
+#wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 
-systemctl restart v2ray
+systemctl deamon-reload
+#systemctl restart v2ray
 #systemctl start v2ray
 #v2ray run
-v2ray 
+#v2ray 
