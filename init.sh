@@ -34,3 +34,4 @@ wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 systemctl restart v2ray
 #systemctl start v2ray
 #v2ray run
+v2ray 
