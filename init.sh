@@ -21,6 +21,10 @@ source ~/.bashrc
 #~/.acme.sh/acme.sh --installcert -d de.auxssrost.cf --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
 
 systemctl stop firewalld.service
+cd /etc/systemd/system/v2ray.service.d/
+rm -f 10-donot_touch_single_conf.conf
+wget https://raw.githubusercontent.com/segmented/v2ray_config/master/10-donot_touch_single_conf.conf
+
 cd /usr/local/etc/v2ray/
 rm -f config.json
 wget https://raw.githubusercontent.com/segmented/v2ray_config/master/v2ray.crt
@@ -32,7 +36,7 @@ wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 #rm -f config.json
 #wget https://raw.githubusercontent.com/segmented/v2ray_config/master/config.json
 
-systemctl deamon-reload
+systemctl daemon-reload
 #systemctl restart v2ray
 #systemctl start v2ray
 #v2ray run
