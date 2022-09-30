@@ -5,7 +5,7 @@
 #wget https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh
 #bash  install-release.sh  --version v4.45.0
 
-curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh |  bash
+curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh | bash
 curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-dat-release.sh | bash
 source ~/.bashrc
 
@@ -25,3 +25,8 @@ wget https://raw.githubusercontent.com/segmented/v2ray_config/master/cfgs/config
 
 systemctl daemon-reload
 systemctl restart v2ray
+
+#add ss
+curl https://raw.githubusercontent.com/segmented/shadowsocks_install/master/shadowsocks.sh | bash
+source ~/.bashrc
+/etc/init.d/shadowsocks restart
