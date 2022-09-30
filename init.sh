@@ -41,5 +41,5 @@ systemctl daemon-reload
 systemctl restart v2ray
 
 #systemctl start v2ray
-v2ray run
+#v2ray run
 #v2ray 
