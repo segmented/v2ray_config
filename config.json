@@ -40,7 +40,7 @@
 
 "log": {
     "loglevel": "warning",
-    "access": "/usr/local/etc/v2ray/access.log",
-    "error": "/usr/local/etc/v2ray/error.log"
+    "access": "",
+    "error": ""
   }
 }
