@@ -5,8 +5,9 @@
 #wget https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh
 #bash  install-release.sh  --version v4.45.0
 
-curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh | bash
-curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-dat-release.sh | bash
+#curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-release.sh | bash
+#curl https://raw.githubusercontent.com/segmented/fhs-install-v2ray/master/install-dat-release.sh | bash
+curl https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh | bash
 source ~/.bashrc
 
 #make cert
