@@ -28,6 +28,6 @@ systemctl daemon-reload
 systemctl restart v2ray
 
 #add ss
-curl https://raw.githubusercontent.com/segmented/shadowsocks_install/master/shadowsocks.sh | bash
-source ~/.bashrc
-/etc/init.d/shadowsocks restart
+#curl https://raw.githubusercontent.com/segmented/shadowsocks_install/master/shadowsocks.sh | bash
+#source ~/.bashrc
+#/etc/init.d/shadowsocks restart
